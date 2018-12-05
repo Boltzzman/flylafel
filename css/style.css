@@ -78,7 +78,7 @@ p.circle{
   width:38em;
   position:relative;
 	margin-left: 19.2em;
-	margin-top: -22.5em;
+	margin-top: -20.5em;
 }
 
 .line1:before {
@@ -121,7 +121,7 @@ p.circle2{
 }
 
 .column-3 {
-	margin: 0em 0em 0em 0em;
+	margin: -10em 0em 0em 0em;
 
 }
 
