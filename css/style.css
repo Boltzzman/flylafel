@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+}
+
+body {
+	margin: 0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+img {
+	max-width: 95%;
+	height: auto;
+}
+
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.home-hero {
+	margin: 0;
+	padding: 8em 16em;
+	background-color: #16A9D7;
+}
+
+
+/* Column system
+=================== */
+
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+	margin-top: 0;
+}
+
+.col-1 {
+	width: 33.333334%;
+	float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	[class^=col-]:first-child {
+		padding-left: 0;
+	}
+
+	[class^=col-]:last-child {
+		padding-right: 0;
+	}
+
+	.col-3 {
+		width: 50%;
+	}
+
+	.col-1 {
+		width: 16.6666%;
+	}
+}
+
+
+/* typography
+============================== */
+
+.title {
+	display: block;
+	font-size: 4em;
+	text-align: center;
+	color: #ffff;
+	font-weight: bold;
+
+}
+
+
+.cta {
+	font-size: 1.75em;
+	color: #FFF;
+	text-align: center;
+	background-color: #16A9D7;
+	margin: 0;
+	padding: 4em 0;
+
+}
+
+.desc-1 {
+	height: auto;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 1.75em;
+	color: #777777;
+	text-align: left;
+}
+
+
+/*button
+============================== */
+
+.button {
+	display: inline-block;
+	font-size:  2.25em;
+	text-decoration: none;
+	text-transform: none;
+	border-width: 1px;
+	border-radius: 6px;
+	border-style: solid;
+	padding: .2em 1em;
+
+
+}
+
+.button-accent {
+	color: #fff;
+	background:  #094557;
+	border-color: #094557;
+	border-radius: 6px;
+}
+
+
+.button-accent:hover,
+.button-accent:focus {
+	background: #fff;
+	color: #094557;
+	border-radius: 6px;
+}
+
+@media (max-width:600px) {
+
+	p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.button {
+		font-size: 1rem
+	}
+}
+
+
+
+/* action
+=================== */
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+	padding: 0em 4em 0em 4em;
+}
+
+
+/* Footer
+=================== */
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+	padding:  5em;
+  margin: 0;
+}
