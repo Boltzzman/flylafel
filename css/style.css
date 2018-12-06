@@ -27,7 +27,7 @@ img {
 	margin: 0 auto;
 }
 
-@media (max-width:60rem) {
+@media (max-width:600px) {
 	.container {
 		width: 33%
 	}
