@@ -17,7 +17,7 @@ body {
 
 
 img {
-	max-width: 95%;
+	max-width: 75%;
 	height: auto;
 }
 
@@ -40,36 +40,37 @@ html, body {
 
 .home-hero {
 	margin: 0;
-	padding: 1em 1em;
+	padding: 1.5em 1.5em;
 	background-color: #16A9D7;
 }
 
 
 .home-hero2 {
 	margin: 0;
-	padding: 1em 1em;
+	padding: 1.5em 1.5em;
 	background-color: #16A9D7;
 }
 
 
 /* typography
 ============================== */
-a#home {
-	font-size: 2em;
-}
+
 .title {
 	display: block;
-	font-size: 2em;
+	font-size: 3em;
 	text-align: center;
 	color: #ffff;
 	font-weight: bold;
+}
+a#home {
+	font-size: 2em;
 }
 
 h2 {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
-	font-size:1.5em;
+	font-size:2.5em;
 	color: #094557;
 	text-align: left;
 	line-height: normal;
@@ -80,7 +81,7 @@ h4 {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
-	font-size:1.5em;
+	font-size:3em;
 	color: #ffff;
 	text-align: center;
 	line-height: normal;
@@ -91,7 +92,7 @@ p {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-	font-size:1em;
+	font-size:1.5em;
 	color: #094557;
 	text-align: left;
 	line-height: normal;
@@ -99,11 +100,21 @@ p {
 
 }
 
+label {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+p.agree {
+  text-align: center;
+}
+  )
+}
 span {
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size:1em;
+font-size:2em;
 color: #FFFF;
 text-align: center;
 line-height: normal;
@@ -111,10 +122,11 @@ height: auto;
 }
 
 
+	}
 
 .Col-lg-2 {
 		margin: 0;
-		padding: .5em;
+		padding: 4em;
 		background: rgb(255,255,255);
 		background: linear-gradient(67deg, rgba(255,255,255,1) 0%, rgba(22,169,215,1) 100%);
 		float: center;
@@ -205,6 +217,7 @@ button:hover {
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
+
 }
 
 /* The Close Button (x) */
