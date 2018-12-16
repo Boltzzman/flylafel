@@ -1,0 +1,59 @@
+<div ng-click="vm.onSelection(vm.fare)" class="ff-list-item" ng-class="::{'list-with-image': (vm.optionsMap.image || vm.promoted == 'true')}">
+    <div class="ff-city-list" ng-class="::{'promoted-fare': vm.promoted === 'true'}">
+        <!---->
+        <!----><span class="airport" ng-if="::!vm.optionsMap.route">Billund</span>
+        <!---->
+        <!---->
+        <!----><span class="country" ng-if="::!vm.optionsMap.noCountry">Denmark</span>
+        <!---->
+        <div class="info">
+            <!----><a class="info-link" ng-if="::vm.fare.cityInfoPath" ng-href="/gb/en/plan-trip/destinations/flights-to-billund" target="_blank" ng-click="vm.stopPropagation($event)" href="/gb/en/plan-trip/destinations/flights-to-billund">
+                <!---->
+                <core-icon icon-id="glyphs.info" ng-if="vm.optionsMap.cityinfo">
+                    <div><svg tabindex="-1" focusable="false" role="img">
+                            <use xlink:href="/gb/en/cheap-flights/?from=SXF&amp;out-from-date=2018-12-03&amp;out-to-date=2019-03-03&amp;budget=150#glyphs.info" ng-href="/gb/en/cheap-flights/?from=SXF&amp;out-from-date=2018-12-03&amp;out-to-date=2019-03-03&amp;budget=150#glyphs.info"></use>
+                        </svg></div>
+                </core-icon>
+                <!---->
+            </a>
+            <!---->
+        </div>
+    </div>
+    <!---->
+    <div class="ff-info-icon" ng-if="!vm.recentSearches">
+        <!----><a class="ff-info-icon-link" ng-if="::vm.fare.cityInfoPath" ng-href="/gb/en/plan-trip/destinations/flights-to-billund" target="_blank" ng-click="vm.stopPropagation($event)" href="/gb/en/plan-trip/destinations/flights-to-billund">
+            <!---->
+            <core-icon icon-id="glyphs.info" ng-if="vm.optionsMap.cityinfo">
+                <div><svg tabindex="-1" focusable="false" role="img">
+                        <use xlink:href="/gb/en/cheap-flights/?from=SXF&amp;out-from-date=2018-12-03&amp;out-to-date=2019-03-03&amp;budget=150#glyphs.info" ng-href="/gb/en/cheap-flights/?from=SXF&amp;out-from-date=2018-12-03&amp;out-to-date=2019-03-03&amp;budget=150#glyphs.info"></use>
+                    </svg></div>
+            </core-icon>
+            <!---->
+        </a>
+        <!---->
+    </div>
+    <!---->
+    <!---->
+    <div class="ff-text-month" ng-if="::vm.optionsMap.departuremonth || vm.optionsMap.aemtext"><span translate="common.components.farefinderwidget.in" translate-default="">in</span> <span ng-bind="::vm.departureMonth">December</span></div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div class="ff-price-type" ng-if="::!vm.optionsMap.noPrice">
+        <div class="price" ng-bind-html="::vm.fare.price.value | displayPrice:vm.fare.price.currencyCode:false:true"><span class="price-symbol">€</span>&nbsp;<span class="price-units">1</span><span class="price-decimals">.94<span></span></span></div>
+        <div class="type" ng-switch="::vm.fare.tripType">
+            <!----><span ng-switch-when="oneway" translate="common.components.farefinderwidget.single" translate-default="">One way</span>
+            <!---->
+            <!---->
+        </div>
+    </div>
+    <!---->
+    <div class="ff-next-icon">
+        <!---->
+        <core-icon icon-id="glyphs.chevron">
+            <div><svg tabindex="-1" focusable="false" role="img">
+                    <use xlink:href="/gb/en/cheap-flights/?from=SXF&amp;out-from-date=2018-12-03&amp;out-to-date=2019-03-03&amp;budget=150#glyphs.chevron" ng-href="/gb/en/cheap-flights/?from=SXF&amp;out-from-date=2018-12-03&amp;out-to-date=2019-03-03&amp;budget=150#glyphs.chevron"></use>
+                </svg></div>
+        </core-icon>
+    </div>
+</div>
